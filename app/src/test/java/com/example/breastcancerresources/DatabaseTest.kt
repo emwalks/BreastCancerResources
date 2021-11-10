@@ -18,7 +18,6 @@ class DatabaseTest {
     @Test
     fun givenDatabase_iCanConnectToIt() {
 
-        assertNotNull()
-        )
+
     }
 }

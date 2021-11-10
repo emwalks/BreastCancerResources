@@ -1,5 +1,9 @@
 # Breast Cancer Resources
 
-Collection of resources for those being treated for breast cancer
+## A Collection of resources for those being treated for breast cancer
 
-No affiliation to resources reccomended - just ones I found particularly helpful during treatment
+No affiliation to resources recommended - just ones I found particularly helpful during treatment.
+
+## Tech
+
+- [Room Database (SQLite)](https://developer.android.com/training/data-storage/room) for data storage
