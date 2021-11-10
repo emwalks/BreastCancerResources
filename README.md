@@ -1,4 +1,4 @@
-# BreastCancerResources
+# Breast Cancer Resources
 
 Collection of resources for those being treated for breast cancer
 
