@@ -8,17 +8,54 @@ class PhotoTests {
     private val mediumPhoto = "mediumPhoto"
     private val fullPhoto = "fullPhoto"
     private val invalidPhoto = "" // what’s tested in Photo.isValidPhoto()
+    private lateinit var photo: Media.Photo
+    private lateinit var smallestPhoto: String
 
     @Test
-    fun testGivenAPhotoMediaObjectWithAMediumAndFullPhoto_WhenGetSmallestAvailablePhotoIsCalled_TheMediumPhotoIsReturned() {
+    fun testGivenAPhotoMediaObject_WithAMediumAndFullPhoto_WhenGetSmallestAvailablePhotoIsCalled_ThenMediumPhotoIsReturned() {
         // Given
-        val photo = Media.Photo(mediumPhoto, fullPhoto)
-        
+        photo = Media.Photo(mediumPhoto, fullPhoto)
+
         // When
-        val smallestPhoto = photo.getSmallestAvailablePhoto()
+        WhenGetSmallestAvailablePhotoIsCalled()
 
         // Then
         val expectedValue = mediumPhoto
         assertEquals(smallestPhoto, expectedValue)
     }
+
+    @Test
+    fun testGivenAPhotoMediaObject_WithNoMediumPhoto_WhenGetSmallestAvailablePhotoIsCalled_ThenNoMediumPhotoIsReturned() {
+        // Given
+        photo = Media.Photo(invalidPhoto, fullPhoto)
+
+        // When
+        WhenGetSmallestAvailablePhotoIsCalled()
+
+        // Then
+        val expectedValue = fullPhoto
+        assertEquals(smallestPhoto, expectedValue)
+    }
+
+    @Test
+    fun testGivenAPhotoMediaObject_WithNoPhotos_WhenGetSmallestAvailablePhotoIsCalled_ThenNoPhotoIsReturned(){
+
+        // Given
+        photo = Media.Photo(invalidPhoto, invalidPhoto)
+
+
+        // When
+        WhenGetSmallestAvailablePhotoIsCalled()
+
+        // Then
+        val expectedValue = Media.Photo.EMPTY_PHOTO
+        assertEquals(smallestPhoto, expectedValue)
+    }
+
+    private fun WhenGetSmallestAvailablePhotoIsCalled() {
+        smallestPhoto = photo.getSmallestAvailablePhoto()
+    }
 }
+
+
+
