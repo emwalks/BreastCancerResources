@@ -13,13 +13,13 @@ interface BaseDao<T> {
 
 @Dao
 interface ResourceDao {
-    @Query("SELECT * FROM resource")
+    @Query("SELECT * FROM resources")
     fun getAll(): List<Resource>
 
-    @Query("SELECT * FROM resource WHERE uid IN (:resourceIds)")
+    @Query("SELECT * FROM resources WHERE uid IN (:resourceIds)")
     fun loadAllByIds(resourceIds: IntArray): List<Resource>
 
-    @Query("SELECT * FROM resource WHERE title LIKE :title LIMIT 1")
+    @Query("SELECT * FROM resources WHERE title LIKE :title LIMIT 1")
     fun findByTitle(title: String): Resource
 
     @Insert
