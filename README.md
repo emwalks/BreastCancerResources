@@ -4,6 +4,7 @@
 
 No affiliation to resources recommended - just ones I found particularly helpful during treatment.
 
-## Tech
+### Tech
 
+- Package by feature approach
 - [Room Database (SQLite)](https://developer.android.com/training/data-storage/room) for data storage
