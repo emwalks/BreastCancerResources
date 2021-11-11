@@ -16,4 +16,5 @@ Following surgery I am undergoing chemotherapy, radiotherapy, targeted therapy a
 - Following a loosely similar approach as described in [Real-Word Android by Tutorials](https://www.raywenderlich.com/books/real-world-android-by-tutorials)
 - Package by feature approach
 - [Room Database (SQLite)](https://developer.android.com/training/data-storage/room) for data storage
+- [Kotlin Flow](https://kotlin.github.io/kotlinx.coroutines/kotlinx-coroutines-core/kotlinx.coroutines.flow/-flow/) to write observable asynchronous queries
 - [Hilt](https://developer.android.com/training/dependency-injection/hilt-android) to manage dependency injection

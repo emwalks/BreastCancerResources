@@ -1,9 +1,6 @@
 package com.emwalks.breastcancerresources.database.entities
 
-import androidx.room.ColumnInfo
-import androidx.room.Entity
-import androidx.room.PrimaryKey
-import androidx.room.TypeConverter
+import androidx.room.*
 
 @Entity(tableName = "resources")
 data class Resource(
@@ -32,8 +29,6 @@ class Converters {
            tags?.split(SEPARATOR)?.map { String.toString() }?.toMutableList()
 
    }
-
-
 
 }
 
