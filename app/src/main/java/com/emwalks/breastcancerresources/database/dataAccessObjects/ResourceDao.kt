@@ -2,6 +2,7 @@ package com.emwalks.breastcancerresources.database.dataAccessObjects
 
 import androidx.room.*
 import com.emwalks.breastcancerresources.database.entities.Resource
+import kotlinx.coroutines.flow.Flow
 
 interface BaseDao<T> {
     @Insert
@@ -24,15 +25,18 @@ interface ResourceDao {
     @Query("SELECT * FROM resources WHERE uid IN (:resourceIds)")
     fun loadAllByIds(resourceIds: IntArray): List<Resource>
 
+    @Query("SELECT * FROM resources WHERE uid = :uid")
+    fun loadUserById(uid: Int): Flow<Resource>
+
+    @Query("SELECT * from resources WHERE tags IN (:tags)")
+    fun loadResourcesByTags(tags: List<String>): Flow<List<Resource>>
+    
     @Query("SELECT * FROM resources WHERE title LIKE :title LIMIT 1")
     fun findByTitle(title: String): Resource
 
     @Query("SELECT * FROM resources WHERE tags LIKE :search ")
     fun findResourceWithTags(search: String): List<Resource>
-/*
-    @Query("SELECT * FROM resources WHERE tags IN (:tags)")
-    fun loadResourcesFromTags(tags: List<String>): List<Resource>
-*/
+
     //Update
     @Update
     fun updateResources(vararg resources: Resource)
