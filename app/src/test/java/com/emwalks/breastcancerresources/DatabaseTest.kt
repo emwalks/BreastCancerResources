@@ -1,4 +1,4 @@
-package com.example.breastcancerresources
+package com.emwalks.breastcancerresources
 
 import org.junit.Test
 

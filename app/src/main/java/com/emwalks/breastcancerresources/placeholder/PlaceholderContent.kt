@@ -1,4 +1,4 @@
-package com.example.breastcancerresources.placeholder
+package com.emwalks.breastcancerresources.placeholder
 
 import java.util.ArrayList
 import java.util.HashMap

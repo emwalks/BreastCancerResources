@@ -1,4 +1,4 @@
-package com.example.breastcancerresources
+package com.emwalks.breastcancerresources
 
 import android.content.ClipData
 import android.os.Bundle
@@ -9,8 +9,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
-import com.example.breastcancerresources.placeholder.PlaceholderContent
-import com.example.breastcancerresources.databinding.FragmentItemDetailBinding
+import com.emwalks.breastcancerresources.placeholder.PlaceholderContent
+import com.emwalks.breastcancerresources.databinding.FragmentItemDetailBinding
 
 /**
  * A fragment representing a single Item detail screen.

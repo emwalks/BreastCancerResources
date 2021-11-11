@@ -1,13 +1,15 @@
-package com.example.breastcancerresources.database.roomDatabase
+package com.emwalks.breastcancerresources.database.roomDatabase
 
 import androidx.room.Database
-import androidx.room.Room
 import androidx.room.RoomDatabase
-import com.example.BreastCancerResourcesApplication
-import com.example.breastcancerresources.database.dataAccessObjects.ResourceDao
-import com.example.breastcancerresources.database.entities.Resource
+import androidx.room.TypeConverter
+import androidx.room.TypeConverters
+import com.emwalks.breastcancerresources.database.dataAccessObjects.ResourceDao
+import com.emwalks.breastcancerresources.database.entities.Converters
+import com.emwalks.breastcancerresources.database.entities.Resource
 
 @Database(entities = [Resource::class], version = 1)
+@TypeConverters(Converters::class)
 abstract class AppDatabase : RoomDatabase() {
     abstract fun resourceDao(): ResourceDao
 }

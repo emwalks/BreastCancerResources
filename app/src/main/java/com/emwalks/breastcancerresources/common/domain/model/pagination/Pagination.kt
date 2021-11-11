@@ -1,4 +1,4 @@
-package com.example.breastcancerresources.common.domain.model.pagination
+package com.emwalks.breastcancerresources.common.domain.model.pagination
 
 data class Pagination(
     val currentPage: Int,

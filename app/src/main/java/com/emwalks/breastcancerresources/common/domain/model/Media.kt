@@ -1,4 +1,4 @@
-package com.example.breastcancerresources.common.domain.model
+package com.emwalks.breastcancerresources.common.domain.model
 
 data class Media(
     val photos: List<Photo>,

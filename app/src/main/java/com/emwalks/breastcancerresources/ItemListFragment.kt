@@ -1,4 +1,4 @@
-package com.example.breastcancerresources
+package com.emwalks.breastcancerresources
 
 import android.content.ClipData
 import android.content.ClipDescription
@@ -14,9 +14,10 @@ import androidx.core.view.ViewCompat
 import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
-import com.example.breastcancerresources.placeholder.PlaceholderContent;
-import com.example.breastcancerresources.databinding.FragmentItemListBinding
-import com.example.breastcancerresources.databinding.ItemListContentBinding
+import com.emwalks.breastcancerresources.R
+import com.emwalks.breastcancerresources.placeholder.PlaceholderContent;
+import com.emwalks.breastcancerresources.databinding.FragmentItemListBinding
+import com.emwalks.breastcancerresources.databinding.ItemListContentBinding
 
 /**
  * A Fragment representing a list of Pings. This fragment

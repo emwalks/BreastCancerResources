@@ -1,10 +1,10 @@
-package com.example.breastcancerresources.database.dataAccessObjects
+package com.emwalks.breastcancerresources.database.dataAccessObjects
 
 import androidx.room.Dao
 import androidx.room.Delete
 import androidx.room.Insert
 import androidx.room.Query
-import com.example.breastcancerresources.database.entities.Resource
+import com.emwalks.breastcancerresources.database.entities.Resource
 
 interface BaseDao<T> {
     @Insert

@@ -13,5 +13,5 @@
         android:layout_height="match_parent"
         android:padding="16dp"
         android:textIsSelectable="true"
-        tools:context="com.example.breastcancerresources.ItemDetailFragment" />
+        tools:context="com.example.breastcancerresources.com.emwalks.breastcancerresources.ItemDetailFragment" />
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

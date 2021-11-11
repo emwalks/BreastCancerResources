@@ -1,4 +1,4 @@
-package com.example.breastcancerresources
+package com.emwalks.breastcancerresources
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
@@ -7,7 +7,8 @@ import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
-import com.example.breastcancerresources.databinding.ActivityItemDetailBinding
+import com.emwalks.breastcancerresources.R
+import com.emwalks.breastcancerresources.databinding.ActivityItemDetailBinding
 
 class ItemDetailHostActivity : AppCompatActivity() {
 
