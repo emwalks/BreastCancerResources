@@ -26,6 +26,6 @@ interface ResourceDao {
     fun insertAll(vararg resources: Resource)
 
     @Delete
-    fun delete(user: Resource)
+    fun delete(resource: Resource)
 }
 
