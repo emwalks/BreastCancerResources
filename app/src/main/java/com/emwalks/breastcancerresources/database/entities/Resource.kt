@@ -5,10 +5,10 @@ import androidx.room.*
 @Entity(tableName = "resources")
 data class Resource(
     @PrimaryKey(autoGenerate = true) val uid: Int,
-    @ColumnInfo(name = "title") val title: String?,
-    @ColumnInfo(name = "description") val description: String?,
-    @ColumnInfo(name = "picture") val picture: String?,
-    @ColumnInfo(name = "link") val link: String?,
+    @ColumnInfo(name = "title") var title: String?,
+    @ColumnInfo(name = "description") var description: String?,
+    @ColumnInfo(name = "picture") var picture: String?,
+    @ColumnInfo(name = "link") var link: String?,
     @ColumnInfo(name = "tags") var tags: MutableList<String?>?
 )
 
