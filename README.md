@@ -2,7 +2,7 @@
 
 ## A Collection of resources for those being treated for breast cancer
 
-## Disclaimer
+### Disclaimer
 No affiliation to resources recommended - just ones I found particularly helpful during treatment.
 
 ## About Me
