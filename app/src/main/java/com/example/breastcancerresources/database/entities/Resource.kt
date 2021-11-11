@@ -15,5 +15,6 @@ data class Resource(
     @ColumnInfo(name = "desctiption") val desctiption: String?,
     @ColumnInfo(name = "picture") val picture: String?,
     @ColumnInfo(name = "link") val link: String?,
+    @ColumnInfo(name = "tags") val tags: List<String>
 )
 
