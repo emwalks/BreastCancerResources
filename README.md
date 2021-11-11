@@ -15,5 +15,5 @@ Following surgery I am undergoing chemotherapy, radiotherapy, targeted therapy a
 
 - Following a loosely similar approach as described in [Real-Word Android by Tutorials](https://www.raywenderlich.com/books/real-world-android-by-tutorials)
 - Package by feature approach
-- [Room Database (SQLite) for data storage](https://developer.android.com/training/data-storage/room) for data storage
-- [Hilt to manage dependency injection](https://developer.android.com/training/dependency-injection/hilt-android)
+- [Room Database (SQLite)](https://developer.android.com/training/data-storage/room) for data storage
+- [Hilt](https://developer.android.com/training/dependency-injection/hilt-android) to manage dependency injection
