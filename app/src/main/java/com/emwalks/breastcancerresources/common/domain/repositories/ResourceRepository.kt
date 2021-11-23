@@ -1,3 +1,3 @@
 package com.emwalks.breastcancerresources.common.domain.repositories
 
-interface ResourceRepository 
+interface ResourceRepository
