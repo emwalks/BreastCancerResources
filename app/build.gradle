@@ -67,7 +67,7 @@ dependencies {
     annotationProcessor("androidx.room:room-compiler:$roomVersion")
 
     // To use Kotlin annotation processing tool (kapt)
-    kapt("androidx.room:room-compiler:$roomVersion")
+   kapt("androidx.room:room-compiler:$roomVersion")
 
     // To use Kotlin Symbolic Processing (KSP)
     //ksp("androidx.room:room-compiler:$roomVersion")
@@ -108,7 +108,7 @@ dependencies {
     def var moshi_version = "1.10.0"
     implementation "com.squareup.retrofit2:converter-moshi:$moshi_converter_version"
     implementation "com.squareup.moshi:moshi-kotlin:$moshi_version"
-    kapt "com.squareup.moshi:moshi-kotlin-codegen:$moshi_version"
+    //kapt "com.squareup.moshi:moshi-kotlin-codegen:$moshi_version"
 
 
 }
